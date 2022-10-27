@@ -11,6 +11,7 @@ from .models import Post
 class PostList(ListView):
     model = Post   # 클래스명
     # template_name = 'blog/index.html'
+    ordering: ['-created_at']
 
 
 # 하나의 post 상세 페이지
